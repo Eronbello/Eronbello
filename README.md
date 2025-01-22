@@ -13,18 +13,17 @@ type Bio map[string]string
 
 func main() {
     for k, v := range GetBio() {
-        fmt.Printf("%+v: %+v
-", k, v)
+        fmt.Printf("%+v: %+v\n", k, v)
     }
 }
 
 func GetBio() Bio {
     return Bio{
-        "- ⚡ Quick bio:":                    "Front-end specialist with a strong focus on Vue.js and React, and extensive experience in full-stack development, leveraging Golang and Node.js on the back-end.",
-        "- 🔭 I’m currently working on":      "Advanced micro front-end architectures at Wiley as a Senior Software Developer.",
-        "- 🌱 I’m currently learning":        "Golang, Web 3 technologies, Blockchain, and enhancing my skills in Java and cloud-native technologies (AWS, K8s, Kafka).",
-        "- 👯 I’m looking to collaborate on": "Cutting-edge front-end projects involving Vue.js, React, and full-stack applications with Golang or Node.js.",
-        "- 🤔 I’m looking for help with":     "Anything that pushes the boundaries of front-end development, especially involving modern frameworks and performance optimization.",
-        "- 💬 Ask me about":                  "Vue.js, React, front-end architecture, micro front-ends, Golang, Docker, and cloud infrastructure.",
+        "- ⚡ Quick bio:":                    "Senior back-end developer specializing in Golang, with a strong focus on building scalable, cloud-native applications and distributed systems.",
+        "- 🔭 I’m currently working on":      "Designing and implementing high-performance APIs and microservices at Wiley as a Senior Software Developer.",
+        "- 🌱 I’m currently learning":        "Advanced Golang patterns, Web 3 technologies, Blockchain, and enhancing expertise in distributed systems and observability tools.",
+        "- 👯 I’m looking to collaborate on": "High-impact back-end projects leveraging Golang, cloud-native solutions, and distributed architectures.",
+        "- 🤔 I’m looking for help with":     "Exploring the latest advancements in Go, Kubernetes, and event-driven architectures using Kafka or RabbitMQ.",
+        "- 💬 Ask me about":                  "Golang, microservices architecture, RESTful APIs, gRPC, Docker, Kubernetes, and scalable back-end solutions.",
     }
 }

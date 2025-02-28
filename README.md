@@ -1,4 +1,6 @@
-# Eron Bello de Oliveira
+# Eron Bello | Senior Software Engineer | Rust | Golang 
+
+![alt text](https://images.ctfassets.net/ouj3yibxj44w/QrNAfRe8TivYpYvs4dN5g/bf95277372607d6e0748e4aff6f294da/not_desired_behavior.svg)
 
 ## About Me
 

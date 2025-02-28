@@ -2,29 +2,24 @@
 
 ## About Me
 
-```golang
-package main
+```rust
+use std::collections::HashMap;
 
-import (
-    "fmt"
-)
-
-type Bio map[string]string
-
-func main() {
-    for k, v := range GetBio() {
-        fmt.Printf("%+v: %+v\n", k, v)
+fn main() {
+    let bio = get_bio();
+    for (key, value) in bio {
+        println!("{} {}", key, value);
     }
 }
 
-func GetBio() Bio {
-    return Bio{
-        "- ⚡ Quick bio:": "Seasoned developer forging cloud-native, scalable applications and distributed systems with unwavering precision.",
-        "- 🔭 Currently working on:": "Architecting high-performance APIs and microservices at Wellhub as a Senior Software Developer, orchestrating robust back-end solutions.",
-        "- 🌱 Currently learning:": "Advanced Go design patterns, blockchain fundamentals (Web3), and delving deeper into distributed systems, observability, and performance tuning.",
-        "- 👯 Looking to collaborate on:": "Cutting-edge back-end projects leveraging Go, Kubernetes, microservices, and event-driven architectures built around Kafka or RabbitMQ.",
-        "- 🤔 Seeking help with:": "Exploring the latest innovations in cloud orchestration, concurrency patterns, and real-time data processing—where performance meets reliability.",
-        "- 💬 Ask me about:": "Everything from front-end frameworks (React, Vue) and Golang best practices to microservices architecture, RESTful APIs, gRPC, Docker, Kubernetes, and scalable front-end solutions.",
-    }
+fn get_bio() -> HashMap<&'static str, &'static str> {
+    let mut bio = HashMap::new();
+    bio.insert("⚡ Quick bio:", "Seasoned Rust enthusiast forging memory-safe, high-performance applications across cloud-native landscapes.");
+    bio.insert("🔭 Currently working on:", "Building robust backend microservices leveraging Rust’s fearless concurrency model.");
+    bio.insert("🌱 Currently learning:", "Advanced async/await patterns, Tokio’s internals, and zero-cost abstractions that push performance boundaries.");
+    bio.insert("👯 Looking to collaborate on:", "Cutting-edge Rust projects—whether it’s systems programming, WebAssembly experiments, or next-gen backend frameworks.");
+    bio.insert("🤔 Seeking help with:", "Exploring new crates, harnessing unsafe optimizations responsibly, and unraveling dark corners of the Rust compiler.");
+    bio.insert("💬 Ask me about:", "Ownership, lifetimes, macros, high-throughput async systems, and how to craft unstoppable Rust solutions.");
+    bio
 }
 
